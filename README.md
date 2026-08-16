@@ -65,3 +65,41 @@ Este proyecto sirve como introducción práctica a:
 3. Interpretación de códigos de estado.
 4. Comprensión de la comunicación cliente-servidor.
 5. Fundamentos del desarrollo back-end.
+
+## Pasos para correr el proyecto (guía para estudiantes)
+
+### 1) Clonar el repositorio
+```bash
+git clone https://github.com/itsronalds/fastapi-store-api.git
+cd fastapi-store-api
+```
+
+### 2) Crear el entorno virtual (`.venv`)
+```bash
+python -m venv .venv
+```
+
+### 3) Activar el entorno virtual
+En **Windows (PowerShell)**:
+```bash
+.venv\Scripts\Activate.ps1
+```
+
+En **macOS/Linux**:
+```bash
+source .venv/bin/activate
+```
+
+### 4) Instalar todas las librerías
+```bash
+pip install -r requirements.txt
+```
+
+### 5) Iniciar el proyecto
+```bash
+uvicorn src.app:app --reload
+```
+
+### 6) Probar en el navegador
+- API: `http://127.0.0.1:8000`
+- Documentación automática: `http://127.0.0.1:8000/docs`
